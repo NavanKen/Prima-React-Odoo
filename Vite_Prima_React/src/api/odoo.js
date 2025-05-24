@@ -1,13 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  // ID
-  // isi BaseURL dengan url odoo
-
-  // EN
-  // Set baseURL to your Odoo API endpoint
-
-  baseURL: "",
+  baseURL: "http://localhost:8069",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
