@@ -45,10 +45,8 @@ const ErrorPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-20 relative overflow-hidden">
-      {/* Background decorations */}
       <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-red-100/30 blur-3xl"></div>
       <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-orange-100/30 blur-3xl"></div>
-
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

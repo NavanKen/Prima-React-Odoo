@@ -77,24 +77,21 @@ const GuruRegisterPage = () => {
 
     if (validateForm()) {
       try {
-        // Kirim data ke API Odoo
         const result = await registerGuru(formData);
 
         if (result.success) {
           console.log("Pendaftaran berhasil:", result.data);
-          // Navigasi ke halaman sukses
+
           navigate("/register/success", {
             state: { type: "guru", name: formData.name },
           });
         } else {
-          // Navigasi ke halaman error jika gagal
           navigate("/register/error", {
             state: { error: result.error, type: "guru" },
           });
         }
       } catch (error) {
         console.error("Error saat mendaftar:", error);
-        // Navigasi ke halaman error jika terjadi exception
         navigate("/register/error", {
           state: {
             error: "Terjadi kesalahan saat menghubungi server",
