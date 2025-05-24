@@ -17,7 +17,6 @@ const ErrorPage = () => {
     }
   }, [location.state, navigate]);
 
-  // Get registration type text
   const getTypeText = () => {
     switch (type) {
       case "guru":
@@ -31,7 +30,6 @@ const ErrorPage = () => {
     }
   };
 
-  // Get back link based on type
   const getBackLink = () => {
     switch (type) {
       case "guru":

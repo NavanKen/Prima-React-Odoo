@@ -28,7 +28,6 @@ const Footer = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={footerVariants}
     >
-      {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 via-blue-500 to-sky-600"></div>
       <div className="absolute w-40 h-40 rounded-full -top-10 -right-10 bg-blue-500/10 blur-3xl"></div>
       <div className="absolute rounded-full -bottom-20 -left-20 w-60 h-60 bg-sky-600/10 blur-3xl"></div>

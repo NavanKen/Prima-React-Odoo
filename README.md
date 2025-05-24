@@ -8,7 +8,7 @@
 
 [🇮🇩 Bahasa Indonesia](#bahasa-indonesia) | [🇬🇧 English](#english)
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/odoo/odoo-original.svg" alt="odoo" width="70" height="70"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/8c01903a-f64c-4b40-85d1-e0a051edcf4b" alt="odoo 18" width="70" height="70"/>
 
 </div>
 
@@ -85,6 +85,7 @@ Buka `http://localhost:5173` di browser Anda.
 Proyek ini masih dalam tahap pengembangan awal dan memiliki beberapa keterbatasan:
 
 - Hanya mendukung operasi Create (belum ada Read, Update, Delete)
+- Dashboard yang belum menggunakan data asli
 - Belum ada sistem autentikasi dan otorisasi
 - Belum ada fitur pencarian dan filter data
 
@@ -169,8 +170,7 @@ Open `http://localhost:5173` in your browser.
 This project is still in early development and has several limitations:
 
 - Only supports Create operations (no Read, Update, Delete yet)
-- No admin page to view registered data
-- No authentication and authorization system
+- Dashboard that does not use real data
 - No search and filter features
 
 ### 🔮 Future Development Plans
@@ -187,8 +187,8 @@ This project is still in early development and has several limitations:
 
 ### 📸 Screenshot Preview
 
-![Prima Odoo React App Preview](https://github.com/NavanKen/belajar-frontend/blob/967ec375b1e7487e4eaeb9cd53386405349dc5f6/image.png)
-![Prima Odoo React App Preview](https://github.com/NavanKen/belajar-frontend/blob/967ec375b1e7487e4eaeb9cd53386405349dc5f6/image.png)
+![Prima Odoo React App Preview](https://github-production-user-asset-6210df.s3.amazonaws.com/141917201/447237409-fe0ff8f2-8b25-4362-b237-b538dfccb64f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250524T100611Z&X-Amz-Expires=300&X-Amz-Signature=9da6cc646544f992bbb5c4546d6379c0b05e2af18096f9677985873a8237c68a&X-Amz-SignedHeaders=host)
+![Prima Odoo React App Preview](https://github-production-user-asset-6210df.s3.amazonaws.com/141917201/447237462-c4fbfdf4-aaee-4fd6-b81b-bfd3b8e54bf2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250524T100742Z&X-Amz-Expires=300&X-Amz-Signature=0508c8e7add64d829da7a6235ebcde722dc24d2133f8d24ba8dec9dadf31855f&X-Amz-SignedHeaders=host)
 
 ### 📄 License
 

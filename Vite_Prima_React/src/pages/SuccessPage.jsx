@@ -6,7 +6,6 @@ const SuccessPage = () => {
   const location = useLocation();
   const { type, name } = location.state || { type: "pendaftar", name: "Anda" };
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -23,7 +22,6 @@ const SuccessPage = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-  // Determine message and colors based on registration type
   const getTypeInfo = () => {
     switch (type) {
       case "guru":
@@ -69,7 +67,6 @@ const SuccessPage = () => {
 
   return (
     <div className="relative flex items-center justify-center min-h-screen py-12 overflow-hidden bg-gray-50">
-      {/* Background decorations */}
       <div className="absolute rounded-full -top-40 -right-40 w-96 h-96 bg-blue-100/30 blur-3xl"></div>
       <div className="absolute rounded-full -bottom-40 -left-40 w-96 h-96 bg-indigo-100/30 blur-3xl"></div>
 
