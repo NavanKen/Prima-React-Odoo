@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_daftar_guru_manager,daftar_guru_manager,model_daftar_guru,,1,1,1,1
+access_daftar_siswa_manager,daftar_siswa_manager,model_daftar_siswa,,1,1,1,1
+access_daftar_staf_manager,daftar_staf_manager,model_daftar_staf,,1,1,1,1

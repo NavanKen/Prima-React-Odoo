@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- List View -->
+    <record id="view_daftar_siswa_list" model="ir.ui.view">
+        <field name="name">view.daftar.siswa.list</field>
+        <field name="model">daftar.siswa</field>
+        <field name="arch" type="xml">
+            <list string="Pendaftaran Siswa">
+                <field name="name"/>
+                <field name="nisn"/>
+                <field name="umur"/>
+                <field name="asal_sekolah"/>
+                <field name="status_verifikasi"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View: daftar.siswa -->
+<record id="view_daftar_siswa_form" model="ir.ui.view">
+    <field name="name">view.daftar.siswa.form</field>
+    <field name="model">daftar.siswa</field>
+    <field name="arch" type="xml">
+        <form string="Pendaftaran Siswa">
+            <sheet>
+            <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Nama siswa"/>
+                        </h1>
+                    </div>
+                <notebook>
+                    <page string="Informasi Pribadi">
+                        <group col="2">
+                            <field name="nisn"/>
+                            <field name="umur"/>
+                            <field name="tanggal_lahir"/>
+                            <field name="jenis_kelamin"/>
+                        </group>
+                    </page>
+                    <page string="Asal Sekolah">
+                        <group col="2">
+                            <field name="asal_sekolah"/>
+                            <field name="tanggal_daftar"/>
+                            <field name="status_verifikasi"/>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+
+
+    <!-- Action -->
+    <record id="action_daftar_siswa" model="ir.actions.act_window">
+        <field name="name">Daftar Siswa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">daftar.siswa</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    
+
+</odoo>

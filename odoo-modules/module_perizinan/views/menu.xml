@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+       <menuitem
+              id="perizinan_root_menu"
+              name="Perizinan"
+              sequence="10"/>
+
+
+       <menuitem
+              id="izin_siswa"
+              name="Siswa"
+              action="action_izin_siswa"
+              parent="perizinan_root_menu"
+              sequence="10"/>
+
+      
+</odoo>

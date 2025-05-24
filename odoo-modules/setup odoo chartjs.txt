@@ -1,0 +1,7 @@
+setup odoo chartjs
+
+=> create file js to import chartjs 
+=> create setup function and catch chart js CDN.
+=> fetching date with Odoo ORM
+=> create new component card to import on odoo
+=> import to xml

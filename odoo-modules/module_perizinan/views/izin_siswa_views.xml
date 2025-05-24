@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View izin.siswa View List -->
+    <record id="view_izin_siswa_list" model="ir.ui.view">
+        <field name="name">view.izin.siswa.list</field>
+        <field name="model">izin.siswa</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="siswa"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- View izin.siswa form -->
+    <record id="view_izin_siswa_form" model="ir.ui.view">
+        <field name="name">view.izin.siswa.form</field>
+        <field name="model">izin.siswa</field>
+        <field name="arch" type="xml">
+            <form string="Izin Siswa">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="siswa"/>
+                        <h1>
+                            <field name="siswa" placeholder="Name siswa"/>
+                        </h1>
+                       <notebook>
+                        <page string="informasi siswa">
+                            <group col='2'>
+                                <field name="alasan" placeholder="" />
+                                <field name="tanggal_keluar" placeholder="tanggal keluar" />
+                                <field name="tanggal_masuk" placeholder="tanggal masuk" />
+                            </group>
+                        </page>
+                        <page string="dokumen pendukung">
+                            <group col='2'>
+                                <field name="surat_dokter" />
+                                <field name="surat_izin" />
+                            </group>
+                        </page>
+                       </notebook>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+   
+
+    <!-- Action izin.siswa -->
+    <record id="action_izin_siswa" model="ir.actions.act_window">
+        <field name="name">Izin Siswa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">izin.siswa</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

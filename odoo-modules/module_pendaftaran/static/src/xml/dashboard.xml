@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-name="owl.OwlPendaftaranDashboard" owl="1">
+        <div class="dashboard-container">
+            <div class="main-content">
+                <!-- Header -->
+                <div class="dashboard-header">
+                    <div class="header-brand">
+                        <i class="fa fa-bar-chart"/>
+                        <div class="header-titles">
+                            <h1>Dashboard Pendaftaran</h1>
+                            <span>Statistik dan Analisis Registrasi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="header-controls">
+                        <div class="filter-wrapper">
+                            <i class="fa fa-calendar"/>
+                            <select class="period-filter" t-on-change="onPeriodFilterChange">
+                                <option value="Hari Ini">Hari Ini</option>
+                                <option value="Minggu Ini">Minggu Ini</option>
+                                <option value="Bulan Ini">Bulan Ini</option>
+                                <option value="Tahun Ini">Tahun Ini</option>
+                            </select>
+                        </div>
+                        <button class="refresh-button" t-on-click="onRefresh">
+                            <i class="fa fa-refresh"/>
+                            <span>Muat Ulang</span>
+                        </button>   
+                    </div>
+                </div>
+
+                <!-- Stat Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card animate" style="animation-delay: 0.2s">
+                        <i class="fa fa-users stat-icon"/>
+                        <div class="stat-content">
+                            <h3>Total Pendaftar</h3>
+                            <div class="stat-value">
+                                <span t-esc="state.totalRegistrants">0</span>
+                                <span class="stat-badge success">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card animate" style="animation-delay: 0.4s">
+                        <i class="fa fa-hourglass-half stat-icon"/>
+                        <div class="stat-content">
+                            <h3>Pending Verifikasi</h3>
+                            <div class="stat-value">
+                                <span t-esc="state.pendingVerification">0</span>
+                                <span class="stat-badge danger">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card animate" style="animation-delay: 0.6s">
+                        <i class="fa fa-check-circle stat-icon"/>
+                        <div class="stat-content">
+                            <h3>Terverifikasi</h3>
+                            <div class="stat-value">
+                                <span t-esc="state.verifiedRegistrants">0</span>
+                                <span class="stat-badge success">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card animate" style="animation-delay: 0.8s">
+                        <i class="fa fa-chart-area stat-icon"/>
+                        <div class="stat-content">
+                            <h3>Rata-rata Usia</h3>
+                            <div class="stat-value">
+                                <span t-esc="state.averageAge">0</span>
+                                <span class="stat-unit">Tahun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <div class="chart-header">
+                            <i class="fa fa-line-chart"/>
+                            <h3>Trend Harian</h3>
+                        </div>
+                        <div class="chart-placeholder animate">
+                            <canvas t-ref="trendChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-box">
+                        <div class="chart-header">
+                            <i class="fa fa-pie-chart"/>
+                            <h3>Distribusi Usia</h3>
+                        </div>
+                        <div class="chart-placeholder animate">
+                            <canvas t-ref="distributionChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>

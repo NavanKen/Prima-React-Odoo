@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View daftar.guru list -->
+    <record id="view_daftar_guru_list" model="ir.ui.view">
+        <field name="name">view.daftar.guru.list</field>
+        <field name="model">daftar.guru</field>
+        <field name="arch" type="xml">
+            <list string="Daftar Guru">
+                <field name="name"/>
+                <field name="nip"/>
+                <field name="jurusan"/>
+                <field name="jenis_kelamin"/>
+                <field name="umur"/> 
+                <field name="tanggal_lahir"/>
+                <field name="tanggal_daftar"/>
+                <field name="status_verifikasi"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- View daftar.guru form -->
+    <record id="view_daftar_guru_form" model="ir.ui.view">
+        <field name="name">view.daftar.guru.form</field>
+        <field name="model">daftar.guru</field>
+        <field name="arch" type="xml">
+            <form string="Daftar Guru">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Nama guru"/>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Informasi Pribadi">
+                            <group col="2">
+                                <field name="nip"/>
+                                <field name="tanggal_lahir"/>
+                                <field name="umur"/>
+                                <field name="jenis_kelamin"/>
+                            </group>
+                        </page>
+                        <page string="Pendidikan &amp; Status">
+                            <group col="2">
+                                <field name="jurusan"/>
+                                <field name="tanggal_daftar"/>
+                                <field name="status_verifikasi"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action daftar.guru -->
+    <record id="action_daftar_guru" model="ir.actions.act_window">
+        <field name="name">Daftar Guru</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">daftar.guru</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
